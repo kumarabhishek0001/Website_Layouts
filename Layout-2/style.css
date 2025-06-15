@@ -1,0 +1,138 @@
+html, body{
+    background-color: black;
+    height: 97vh;
+    width: 98vw;
+}
+
+*{
+    font-family: figtree;
+}
+#top-container{
+    height: 100%;
+    width: 100%;
+
+    /* debug */
+    /* border: 2px solid whitesmoke; */
+
+    
+}
+
+header{
+    width: 100%;
+    height: 10%;
+    /* background-color: lightblue; */
+    /* border-bottom: 3px solid whitesmoke; */
+    color: whitesmoke;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    padding: 20px;
+    padding-left: 20px;
+    border: 1px solid black;
+    background-color: #121212;
+    border-radius: 30px;
+
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+    cursor: pointer;
+    /* padding: 5px; */
+}
+
+li:hover{
+    border: 1px solid #d1c395;
+    border-radius: 30px;
+    /* color: black; */
+}
+
+
+main{
+    width: 100%;
+    height: 90%;
+    
+    /* background-color: aquamarine; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container{
+    height: 80%;
+    width: 90%;
+    margin-bottom: 50px;
+    /* background-color: coral; */
+
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, 33.33%);
+
+    gap: 10px;
+    /* gap: 5px; */
+}
+
+.children{
+    color: aqua;
+    /* border: 2px solid whitesmoke; */
+    border-radius: 10px;
+    background-color: #d1c395;
+}
+
+#child-2{
+    background-color: #eeb503;
+}
+
+#child-3{
+    grid-column-start: 3;
+    grid-column-end: -1;
+    background-color: #cdd0d5;
+}
+
+#child-4{
+    grid-row-start: 2;
+    grid-row-end: -1;
+    background-color: #eeb503;
+}
+
+#child-5{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: #2a1800;
+}
+
+#child-7{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: #eeb503;
+}
+
+#child-8{
+    background-color: #eeb503;
+}
+
+/* resolving the gap issue */
+.row-1{
+    margin-top: 20px;
+    
+}
+
+.row-3{
+    margin-bottom: 40px;
+}
+
+.column-1{
+    margin-left: 20px;
+}
+
+.column-4{
+    margin-right: 60px;
+}
